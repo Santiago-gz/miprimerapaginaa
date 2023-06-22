@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mi primera Website</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+ </head>
+<body>
+    <header class="container-nav">
+        <nav class="navbar" role="navigation">
+            <main>
+                <a href="#" class="brand">Mi pagina web</a>
+            </main>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="button-menu-toggle">Menu</button>
+    </header>
+    <div class="container">
+        <h1>Bienvenidos a mi primer Website!</h1>
+        <div class="row">
+            <div class="column">
+                <section>
+                <h2>Un poco de quien soy</h2>
+                <p>Soy Santi G, ¡y esta es mi primera página web!</p>
+                <p>Estoy aprendiendo desarrollo web para crear sitios 
+                    web visualmente atrapantes y funcionales.
+                </p>
+                </section>
+            </div>
+            <div class="column">
+                <section>
+                <h2>Objetivos</h2>
+                <p>A lo largo de este curso, estaré aprendiendo HTML, 
+                    CSS y JavaScript. Estos lenguajes me ayudarán a 
+                    crear una base sólida en el desarrollo 
+                    web front-end.
+                </p>
+                </section>
+            </div>
+        </div>   
+    </div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/-C5vw9kXKJQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <a class="logo-ig" href="https://www.instagram.com/homemarias/?hl=es" target="_blank">
+        <div class="image"><img src="logo-ig.png" alt="Logo PNG de Instagram" /></div>
+    </a>
+    <form id="myForm">
+        <label for="email">Correo electronico:</label>
+        <input type="email" id="email" name="email" required>
+        <button type="submit">Enviar</button>
+    </form>
+    <button onClick="showAlert()" aria-label="Haz clic en mí">¡Haz clic en mí!</button>
+    <footer>         
+        <p>Tienda de Muebles &copy; 2023. Todos los derechos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
