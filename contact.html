@@ -1,33 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mi primera Website</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
- </head>
+  <meta charset="UTF-8" />
+  <title>Contacto</title>
+  <link rel="stylesheet" type="text/css" href="estilos.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=VT323&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/x-icon"
+    href="https://media.licdn.com/dms/image/D4D0BAQF6nQ4MRMXXSw/company-logo_200_200/0/1682538121368?e=2147483647&v=beta&t=khNkHAV3OQ8ojPGw0oqXpGxHOu8dMdsPRfupaFSVd5Y">
+
+</head>
+
 <body>
-    <div class="container-nav">
-        <nav class="navbar" role="navigation">
-            <a href="#" class="brand">Mi pagina web</a>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <button class="button-menu-toggle">Menu</button>
-    </div>
+  <header class="container-nav">
+    <nav class="navbar" role="navigation">
+      <img
+        src="https://media.licdn.com/dms/image/D4D0BAQF6nQ4MRMXXSw/company-logo_200_200/0/1682538121368?e=2147483647&v=beta&t=khNkHAV3OQ8ojPGw0oqXpGxHOu8dMdsPRfupaFSVd5Y"
+        class="imagenBarra">
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="acercaDe.html">Acerca de</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <button class="button-menu-toggle">Menu</button>
+  </header>
+  <br>
+  <br>
+  <br>
+  <main>
     <div class="container">
-        <h1>Contacto</h1>
-            <p>¡Contáctanos para cualquier consulta o solicitud de información!</p>
-        <form>
-  <!-- Agrega aquí los campos del formulario -->
-        </form>
-        
-    </div>
-   
-    <script src="script.js"></script>
+      <h1>Contacto</h1>
+      <p>¡Contáctanos para cualquier consulta o solicitud de información!</p>
+      <form id="myForm">
+        <label for="nombre">Nombre Completo</label>
+        <br>
+        <input type="text" id="nombre" name="nombre">
+        <br>
+        <label for="email">Correo Electrónico:</label>
+        <br>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <button type="submit" id="submit">Enviar</button>
+      </form>
+  </main>
+  <footer>
+    <p>Para comunicarse con nosotros, ingrese a la sección "Contacto"</p>
+    <button onclick="showAlert()" aria-label="Haz click en mí" id="botonAlerta">Haz click en mi!</button>
+  </footer>
+  <script src="script.js"></script>
 </body>
+
 </html>
